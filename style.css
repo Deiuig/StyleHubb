@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 20%);
+}
+
+header {
+    background-color: hsl(0, 0%, 7%);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.capulma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 27%);
+    border-radius: 4px;
+}
+
+.mezozoic {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.atnt {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.atntimg {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.atnttxt {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.atntlinks a {
+    text-decoration: none;
+    color: hsl(33, 100%, 50%);
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid hsl(33, 100%, 50%);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.atntlinks a:hover {
+    background-color: hsl(33, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.customs {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 87%);
+    margin-top: 20px;
+}
+
+.shop {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.shop h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.shopdesc {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.produse {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.produs {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.produs:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(0, 0%, 100%);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stay {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.subscription {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.subscription input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 87%);
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.subbuton {
+    padding: 12px 20px;
+    background-color: hsl(33, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subbuton:hover {
+    background-color: hsl(26, 100%, 50%);
+}
+
+.socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: hsl(33, 100%, 50%);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+    .capulma {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mezozoic {
+        padding: 60px 20px;
+    }
+
+    .atnt {
+        max-width: 100%;
+    }
+
+    .produse {
+        flex-direction: column;
+    }
+
+    .produs {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
